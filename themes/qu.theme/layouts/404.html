@@ -1,0 +1,15 @@
+{{ define "main" }}
+<section class="section">
+    <div class="container text-center" style="padding: var(--spacing-4xl) 0;">
+        <h1 style="font-size: clamp(4rem, 12vw, 8rem); margin-bottom: var(--spacing-md); color: var(--color-primary);">404</h1>
+        <h2 style="margin-bottom: var(--spacing-lg);">{{ i18n "not_found_title" | default "Page not found" }}</h2>
+        <p style="max-width: 540px; margin-inline: auto; margin-bottom: var(--spacing-xl); color: var(--color-text-light);">
+            {{ i18n "not_found_message" | default "The page you were looking for does not exist or has been moved." }}
+        </p>
+        <a href="{{ .Site.Home.RelPermalink }}" class="btn btn-primary btn-lg">
+            <svg width="16" height="16"><use href="#icon-arrow-right"></use></svg>
+            {{ i18n "home" }}
+        </a>
+    </div>
+</section>
+{{ end }}

@@ -1,0 +1,23 @@
+{{ with index .Site.Menus "quick_links" }}
+<section class="section">
+    <div class="container">
+        <div class="section-header reveal">
+            <h2>{{ i18n "quick_links" }}</h2>
+            <p>{{ i18n "quick_links_subtitle" }}</p>
+        </div>
+
+        <div class="quick-links">
+            {{ range $i, $e := . }}
+            <a href="{{ .URL }}"{{ if .Params.external }} target="_blank" rel="noopener"{{ end }} class="quick-link reveal" style="--reveal-delay: {{ mul $i 60 }}ms;">
+                {{ with .Params.icon }}
+                <div class="quick-link-icon">
+                    <svg width="24" height="24"><use href="#icon-{{ . }}"></use></svg>
+                </div>
+                {{ end }}
+                <span class="quick-link-text">{{ .Name }}</span>
+            </a>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}

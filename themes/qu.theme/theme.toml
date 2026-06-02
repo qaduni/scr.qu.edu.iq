@@ -1,0 +1,20 @@
+name = "qu.theme"
+license = "MIT"
+licenselink = "https://github.com/qaduni/qu.theme/blob/main/LICENSE"
+description = "A general-purpose, bilingual (RTL/LTR) Hugo theme for universities, departments, faculties, research centres and similar academic or public-sector organisations. Ships with menu-driven navigation, configurable branding, PWA support and SEO scaffolding."
+homepage = "https://github.com/qaduni/qu.theme"
+demosite = "https://github.com/qaduni/qu.theme"
+tags = ["university", "education", "academic", "rtl", "multilingual", "responsive", "pwa", "accessibility", "blog", "news"]
+features = ["responsive", "rtl", "multilingual", "i18n", "pwa", "seo", "accessibility", "search", "blog", "menu-driven", "configurable-branding"]
+min_version = "0.124.0"
+
+[author]
+  name = "Al-Qadisiyah University"
+  homepage = "https://qu.edu.iq"
+
+# All `[params]` defaults are documented in exampleSite/hugo.toml.
+# The theme works with no params at all (sensible defaults shipped) but
+# every part of the visual and structural identity is overrideable.
+[params]
+  rtl_support = true
+  multilingual = true

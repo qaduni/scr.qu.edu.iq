@@ -1,0 +1,67 @@
+{{ $assets := partialCached "site-assets.html" . }}
+{{ $newsSectionPath := .Site.Params.contentSections.news | default "/media/news" }}
+<section class="section">
+    <div class="container">
+        <div class="section-header reveal">
+            <h2>{{ i18n "latest_news" }}</h2>
+            <p>{{ i18n "news_subtitle" }}</p>
+        </div>
+
+        <div class="news-grid">
+            {{ $newsSection := .Site.GetPage $newsSectionPath }}
+            {{ with $newsSection }}
+            {{ range $i, $e := first 3 .Pages.ByDate.Reverse }}
+            <article class="news-card reveal" style="--reveal-delay: {{ mul $i 90 }}ms;">
+                <div class="news-card-image">
+                    {{ if .Params.image }}
+                    <picture>
+                        <source srcset="{{ .Params.image }}" type="image/webp">
+                        <img src="{{ .Params.image }}" alt="{{ with .Params.imageAlt }}{{ . }}{{ else }}{{ .Title }}{{ end }}" style="width: 400px;" loading="lazy">
+                    </picture>
+                    {{ else }}
+                    <picture>
+                        <source srcset="{{ $assets.logoWebP }}" type="image/webp">
+                        <img src="{{ $assets.logoPNG }}" alt="" aria-hidden="true" style="width: 400px;" loading="lazy">
+                    </picture>
+                    {{ end }}
+                </div>
+                <div class="news-card-content">
+                    <div class="news-card-date">
+                        <svg width="14" height="14">
+                            <use href="#icon-calendar"></use>
+                        </svg>
+                        <time datetime="{{ .Date.Format "2006-01-02" }}">
+                            {{ .Date | time.Format ":date_long" }}
+                        </time>
+                    </div>
+                    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                    <p>{{ with .Description }}{{ . }}{{ else }}{{ .Summary | truncate 120 }}{{ end }}</p>
+                </div>
+            </article>
+            {{ end }}
+            {{ else }}
+            <article class="news-card reveal">
+                <div class="news-card-content">
+                    <div class="news-card-date">
+                        <svg width="14" height="14">
+                            <use href="#icon-calendar"></use>
+                        </svg>
+                        <time>{{ now | time.Format ":date_long" }}</time>
+                    </div>
+                    <h3><a href="#">{{ i18n "coming_soon" }}</a></h3>
+                    <p>{{ i18n "stay_tuned" }}</p>
+                </div>
+            </article>
+            {{ end }}
+        </div>
+
+        <div class="text-center mt-xl">
+            <a href="{{ $newsSectionPath | relLangURL }}" class="btn btn-primary btn-lg">
+                {{ i18n "all_news" }}
+                <svg width="16" height="16">
+                    <use href="#icon-arrow-right"></use>
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>

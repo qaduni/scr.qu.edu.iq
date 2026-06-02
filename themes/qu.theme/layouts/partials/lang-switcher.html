@@ -1,0 +1,25 @@
+{{- $page := . -}}
+{{- $current := $page.Language.Lang -}}
+{{- $others := slice -}}
+{{- range hugo.Sites -}}
+    {{- if ne .Language.Lang $current -}}
+        {{- $others = $others | append . -}}
+    {{- end -}}
+{{- end -}}
+{{- if $others }}
+<div class="lang-switcher">
+    {{- range $others }}
+        {{- $lang := .Language.Lang -}}
+        {{- $label := or .Language.Label $lang -}}
+        {{- with .Language.Params.label }}{{ $label = . }}{{ end -}}
+        {{- $target := "" -}}
+        {{- range $page.AllTranslations -}}
+            {{- if eq .Language.Lang $lang -}}
+                {{- $target = .Permalink -}}
+            {{- end -}}
+        {{- end -}}
+        {{- if not $target }}{{ $target = .Home.RelPermalink }}{{ end }}
+    <a href="{{ $target }}" data-lang-switch="{{ $lang }}" hreflang="{{ $lang }}">{{ $label }}</a>
+    {{- end }}
+</div>
+{{- end }}

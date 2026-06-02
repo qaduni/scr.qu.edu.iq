@@ -1,0 +1,113 @@
+# =============================================================================
+# exampleSite — a minimal, working demo for qu.theme
+#
+# Build with:   cd exampleSite && hugo server --themesDir ../..
+#               (or copy into your own repo and customise from there)
+# =============================================================================
+
+baseURL = "https://example.org/"
+defaultContentLanguage = "en"
+title = "qu.theme demo"
+theme = "qu.theme"
+
+[pagination]
+  pagerSize = 10
+
+# -----------------------------------------------------------------------------
+# Languages — drop the [languages.ar] block for a single-language site, or
+# add a third language and the theme will pick it up automatically.
+# -----------------------------------------------------------------------------
+[languages]
+  [languages.en]
+    label = "English"
+    weight = 1
+    direction = "ltr"
+    title = "qu.theme demo"
+    locale = "en"
+    [languages.en.params]
+      description = "A demo of the qu.theme — a general-purpose Hugo theme for academic organisations."
+      shortTitle  = "qaduni demo"
+      parentName  = "Example University"
+      parentURL   = "https://example.org"
+      [languages.en.params.contact]
+        address = "123 Example Street, Demo City, Country"
+
+  [languages.ar]
+    label = "العربية"
+    weight = 2
+    direction = "rtl"
+    title = "عرض qu.theme"
+    locale = "ar"
+    [languages.ar.params]
+      description = "عرض توضيحي لقالب qu.theme — قالب هيوغو عام للمؤسسات الأكاديمية."
+      shortTitle  = "عرض القالب"
+      parentName  = "جامعة المثال"
+      parentURL   = "https://example.org"
+      [languages.ar.params.contact]
+        address = "١٢٣ شارع المثال، المدينة، البلد"
+
+# -----------------------------------------------------------------------------
+# Site identity & theme params
+# -----------------------------------------------------------------------------
+[params]
+  contactFormEndpoint    = ""
+  graduateFormEndpoint   = ""
+  visitorCounterEndpoint = ""
+  showOfficialDomainNotice = false
+
+  [params.contact]
+    email = "info@example.org"
+    phone = "+1 555 0100"
+
+  [params.social]
+    facebook  = "https://facebook.com/example"
+    twitter   = ""
+    youtube   = ""
+    instagram = ""
+
+  [params.externalServices]
+    universityMain = "https://example.org"
+    sustainability = "https://sustainability.example.org"
+
+  [params.schema]
+    type          = "EducationalOrganization"
+    alternateName = "Example U"
+    [params.schema.address]
+      locality = "Demo City"
+      region   = "Demo State"
+      country  = "Example Country"
+
+  [params.contentSections]
+    news          = "/news"
+    announcements = "/announcements"
+    contact       = "/contact"
+
+  [params.theme]
+    primaryColor      = "#0f4c81"
+    primaryColorLight = "#1a6bb5"
+    primaryColorDark  = "#0a3459"
+    accentColor       = "#ffd700"
+
+  [params.pwa]
+    enabled = false
+
+  [params.search]
+    pagefind = false
+
+# -----------------------------------------------------------------------------
+# Markup + Output formats — match the theme's expectations.
+# -----------------------------------------------------------------------------
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = false
+
+[outputs]
+  home    = ["HTML", "RSS", "sitemap", "WebAppManifest"]
+  section = ["HTML", "RSS"]
+  page    = ["HTML"]
+
+[sitemap]
+  changefreq = "weekly"
+  filename   = "sitemap.xml"
+  priority   = 0.5

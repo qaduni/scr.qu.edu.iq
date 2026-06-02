@@ -1,0 +1,174 @@
+{{ $assets := partialCached "site-assets.html" . }}
+<!DOCTYPE html>
+<html lang="{{ .Language.Lang }}" dir="{{ .Language.Direction | default "ltr" }}" class="no-js">
+<head>
+    <script>(function(d){d.classList.remove('no-js');d.classList.add('js');})(document.documentElement);</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <title>{{ block "title" . }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+
+    <link rel="icon" type="image/webp" href="{{ $assets.logoWebP }}">
+
+    <link rel="manifest" href="{{ "manifest.webmanifest" | relLangURL }}">
+    <meta name="theme-color" content="{{ .Site.Params.theme.primaryColor | default "#0f4c81" }}">
+    <link rel="apple-touch-icon" href="{{ $assets.logoPNG }}">
+
+    {{ $defaultFonts := dict
+        "ar" (slice "cairo-regular.woff2" "cairo-bold.woff2")
+        "en" (slice "inter-regular.woff2" "inter-bold.woff2")
+    }}
+    {{ $configured := .Site.Params.theme.preloadFonts }}
+    {{ $fonts := cond (eq $configured nil) $defaultFonts $configured }}
+    {{ with index $fonts .Language.Lang }}
+        {{ range . }}
+    <link rel="preload" href="/fonts/{{ . }}" as="font" type="font/woff2" crossorigin>
+        {{ end }}
+    {{ end }}
+
+    {{ if .IsHome }}
+    {{ $heroType := "" }}
+    {{ if hasSuffix $assets.hero ".webp" }}{{ $heroType = "image/webp" }}
+    {{ else if hasSuffix $assets.hero ".svg" }}{{ $heroType = "image/svg+xml" }}
+    {{ else if or (hasSuffix $assets.hero ".jpg") (hasSuffix $assets.hero ".jpeg") }}{{ $heroType = "image/jpeg" }}
+    {{ else if hasSuffix $assets.hero ".png" }}{{ $heroType = "image/png" }}{{ end }}
+    <link rel="preload" href="{{ $assets.hero }}" as="image" fetchpriority="high"{{ with $heroType }} type="{{ . }}"{{ end }}>
+    {{ end }}
+
+    {{ $cssFiles := slice
+        "css/_variables.css"
+        "css/_fonts.css"
+        "css/_base.css"
+        "css/_header.css"
+        "css/components/_hero.css"
+        "css/components/_buttons.css"
+        "css/components/_sections.css"
+        "css/components/_cards.css"
+        "css/components/_quick-links.css"
+        "css/components/_news.css"
+        "css/components/_announcements.css"
+        "css/components/_visitor-counter.css"
+        "css/components/_page-header.css"
+        "css/components/_lists.css"
+        "css/components/_pagination.css"
+        "css/components/_content.css"
+        "css/components/_forms.css"
+        "css/components/_motion.css"
+        "css/_footer.css"
+        "css/_responsive.css"
+    }}
+
+    {{ $cssResources := slice }}
+    {{ range $cssFiles }}
+        {{ with resources.Get . }}
+            {{ $cssResources = $cssResources | append . }}
+        {{ end }}
+    {{ end }}
+
+    {{ $style := $cssResources | resources.Concat "css/bundle.css" | minify | fingerprint }}
+
+    {{ partial "theme-vars.html" . }}
+
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+
+    <meta property="og:title" content="{{ .Title }}">
+    <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:site_name" content="{{ .Site.Title }}">
+    <meta property="og:locale" content="{{ .Language.Lang }}">
+    {{ with .Params.image }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ .Title }}">
+    <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    {{ with .Params.image }}<meta name="twitter:image" content="{{ . | absURL }}">{{ end }}
+
+    <link rel="canonical" href="{{ .Permalink }}">
+
+    {{ if .IsTranslated }}
+    <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+    {{ range .Translations }}
+    <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+    {{ end }}
+    {{ end }}
+    <link rel="alternate" hreflang="x-default" href="{{ .Site.BaseURL }}">
+
+    {{- $schemaType := .Site.Params.schema.type | default "Organization" -}}
+    {{- $orgLd := dict
+        "@context" "https://schema.org"
+        "@type"    $schemaType
+        "name"     .Site.Title
+        "url"      .Site.BaseURL
+        "logo"     $assets.logoPNGAbs
+        "description" .Site.Params.description
+    -}}
+    {{- with .Site.Params.schema.alternateName }}{{ $orgLd = merge $orgLd (dict "alternateName" .) }}{{ end -}}
+    {{- with .Site.Params.schema.address }}
+        {{- $addr := dict "@type" "PostalAddress" -}}
+        {{- with .locality }}{{ $addr = merge $addr (dict "addressLocality" .) }}{{ end -}}
+        {{- with .region   }}{{ $addr = merge $addr (dict "addressRegion"   .) }}{{ end -}}
+        {{- with .country  }}{{ $addr = merge $addr (dict "addressCountry"  .) }}{{ end -}}
+        {{- with .street   }}{{ $addr = merge $addr (dict "streetAddress"   .) }}{{ end -}}
+        {{- with .postal   }}{{ $addr = merge $addr (dict "postalCode"      .) }}{{ end -}}
+        {{- if gt (len $addr) 1 -}}
+            {{- $orgLd = merge $orgLd (dict "address" $addr) -}}
+        {{- end -}}
+    {{- end -}}
+    {{- $cp := dict "@type" "ContactPoint" "contactType" "customer service" -}}
+    {{- with .Site.Params.contact.phone }}{{ $cp = merge $cp (dict "telephone" .) }}{{ end -}}
+    {{- with .Site.Params.contact.email }}{{ $cp = merge $cp (dict "email"     .) }}{{ end -}}
+    {{- if gt (len $cp) 2 }}{{ $orgLd = merge $orgLd (dict "contactPoint" $cp) }}{{ end -}}
+    {{- $sameAs := slice -}}
+    {{- with .Site.Params.social -}}
+        {{- range $k, $v := . -}}{{ with $v }}{{ $sameAs = $sameAs | append . }}{{ end }}{{- end -}}
+    {{- end -}}
+    {{- if $sameAs }}{{ $orgLd = merge $orgLd (dict "sameAs" $sameAs) }}{{ end }}
+    <script type="application/ld+json">{{ $orgLd | jsonify (dict "indent" "  ") | safeJS }}</script>
+    {{ if .IsPage }}
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "{{ .Title }}",
+        "description": "{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}",
+        "url": "{{ .Permalink }}",
+        "inLanguage": "{{ .Language.Lang }}",
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "{{ .Site.Title }}",
+            "url": "{{ .Site.BaseURL }}"
+        }
+    }
+    </script>
+    {{ end }}
+
+    {{ block "head" . }}{{ end }}
+</head>
+<body data-lang="{{ .Language.Lang }}"{{ if .Site.Params.pwa.enabled }} data-pwa-enabled="true"{{ end }}>
+    {{ partial "icons.html" . }}
+    {{ partial "header.html" . }}
+
+    <main id="main-content">
+        {{ block "main" . }}{{ end }}
+    </main>
+
+    {{ partial "footer.html" . }}
+
+    {{ $jsMain := resources.Get "js/main.js" | minify | fingerprint }}
+    <script src="{{ $jsMain.RelPermalink }}" defer></script>
+
+    {{ $langs := slice }}
+    {{ $first := true }}
+    {{ range hugo.Sites }}
+        {{ $langs = $langs | append (dict "lang" .Language.Lang "url" .Home.RelPermalink "default" $first) }}
+        {{ $first = false }}
+    {{ end }}
+    <script id="theme-languages" type="application/json">{{ $langs | jsonify | safeJS }}</script>
+
+    {{ $jsLang := resources.Get "js/language-redirect.js" | minify | fingerprint }}
+    <script src="{{ $jsLang.RelPermalink }}"></script>
+
+    {{ block "scripts" . }}{{ end }}
+</body>
+</html>

@@ -1,0 +1,61 @@
+{{ define "main" }}
+<section class="page-header">
+    <div class="container">
+        <h1 data-pagefind-body data-pagefind-weight="10" data-pagefind-meta="title">{{ .Title }}</h1>
+        <nav aria-label="Breadcrumb">
+            <ol class="breadcrumb">
+                <li><a href="{{ .Site.Home.RelPermalink }}">{{ i18n "home" }}</a></li>
+                {{ with .CurrentSection }}
+                {{ if ne .Title $.Title }}
+                <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+                {{ end }}
+                {{ end }}
+                <li>{{ .Title }}</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+
+<div class="content-wrapper">
+    <div class="container">
+        {{ $type := "news" }}
+        {{ $category := "" }}
+        {{ $annSection := .Site.Params.contentSections.announcements | default "/media/announcements" }}
+
+        {{ with .CurrentSection }}
+            {{ if or
+                (hasPrefix .RelPermalink $annSection)
+                (hasPrefix .RelPermalink (printf "/%s%s" $.Language.Lang $annSection))
+            }}
+                {{ $type = "announcement" }}
+            {{ end }}
+        {{ end }}
+
+        {{ with .Params.type }}
+            {{ $lowerType := . | lower }}
+            {{ if ne $lowerType "news" }}
+                {{ $category = $lowerType }}
+            {{ end }}
+        {{ end }}
+
+        {{ $pfTypeKey := i18n "type_label" }}
+        {{ $pfCategoryKey := i18n "category_label" }}
+        {{ $pfTypeValue := cond (eq $type "announcement") (i18n "announcement_label") (i18n "news_label") }}
+        {{ $pfCategoryValue := "" }}
+        {{ with $category }}
+            {{ $key := printf "category_%s" . }}
+            {{ $localised := i18n $key }}
+            {{ $pfCategoryValue = cond (eq $localised "") . $localised }}
+        {{ end }}
+
+        <article class="article-content" data-pagefind-body>
+            <span hidden data-pagefind-filter="{{ $pfTypeKey }}:{{ $pfTypeValue }}"></span>
+            {{ if $pfCategoryValue }}
+            <span hidden data-pagefind-filter="{{ $pfCategoryKey }}:{{ $pfCategoryValue }}"></span>
+            {{ end }}
+
+            {{ .Content }}
+        </article>
+    </div>
+</div>
+{{ end }}

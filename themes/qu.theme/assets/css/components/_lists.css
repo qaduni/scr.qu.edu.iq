@@ -1,0 +1,130 @@
+.list-page {
+    min-height: calc(100vh - 200px);
+}
+
+.list-items {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.list-item {
+    display: flex;
+    gap: var(--spacing-xl);
+    padding: var(--spacing-xl);
+    background: var(--color-background);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-border-light);
+    transition: all var(--transition-base);
+}
+
+.list-item:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-primary);
+}
+
+.list-item.priority-high {
+    border-left: 4px solid var(--color-accent);
+}
+
+[dir="rtl"] .list-item.priority-high {
+    border-left: none;
+    border-right: 4px solid var(--color-accent);
+}
+
+.list-item-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 70px;
+    padding: var(--spacing-md);
+    background: var(--color-primary-gradient);
+    color: white;
+    border-radius: var(--radius-md);
+    text-align: center;
+}
+
+.list-item-date .day {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.list-item-date .month {
+    font-size: 0.75rem;
+    opacity: 0.9;
+    margin-top: var(--spacing-xs);
+}
+
+.list-item-content {
+    flex: 1;
+}
+
+.list-item-content h2 {
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.4;
+}
+
+.list-item-content h2 a {
+    color: var(--color-text);
+    transition: color var(--transition-fast);
+}
+
+.list-item-content h2 a:hover {
+    color: var(--color-primary);
+}
+
+.list-item-content p {
+    font-size: 0.9375rem;
+    color: var(--color-text-light);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.priority-badge {
+    display: inline-block;
+    background: var(--color-accent);
+    color: var(--color-primary-dark);
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-sm);
+    margin-bottom: var(--spacing-sm);
+}
+
+.category-badge {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-sm);
+    background: var(--color-background-alt);
+    color: var(--color-text-secondary);
+    margin-inline-end: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+}
+
+@media (max-width: 768px) {
+    .list-item {
+        flex-direction: column;
+        gap: var(--spacing-lg);
+    }
+
+    .list-item-date {
+        flex-direction: row;
+        min-width: auto;
+        gap: var(--spacing-sm);
+        align-self: flex-start;
+    }
+
+    .list-item-date .day {
+        font-size: 1.25rem;
+    }
+
+    .list-item-date .month {
+        margin-top: 0;
+    }
+}

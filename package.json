@@ -1,0 +1,8 @@
+{
+  "name": "qa.qu.edu.iq",
+  "version": "1.0.0",
+  "description": "Al-Qadisiyah University QA Department website.",
+  "devDependencies": {
+    "pagefind": "^1.5.2"
+  }
+}

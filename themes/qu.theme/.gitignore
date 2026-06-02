@@ -1,0 +1,23 @@
+# Hugo build artefacts
+public/
+resources/
+.hugo_build.lock
+
+# exampleSite build output
+exampleSite/public/
+exampleSite/resources/
+exampleSite/.hugo_build.lock
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Node (in case future tooling is added)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

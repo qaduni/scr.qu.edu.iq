@@ -1,0 +1,109 @@
+{{ $assets := partialCached "site-assets.html" . }}
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-main">
+            <!-- About Column -->
+            <div class="footer-about">
+                <a href="{{ .Site.Home.RelPermalink }}" class="logo" aria-label="{{ .Site.Title }} — {{ i18n "home" }}">
+                    <picture>
+                        <source srcset="{{ $assets.logoWebP }}" type="image/webp">
+                        <img src="{{ $assets.logoPNG }}" alt="" aria-hidden="true" width="50" height="50" style="height: 50px;" loading="lazy" decoding="async">
+                    </picture>
+                    <span aria-hidden="true" style="font-size: 1.1rem;">{{ .Site.Title }}</span>
+                </a>
+                <p>
+                    {{ .Site.Params.description | default (i18n "site_description") }}
+                </p>
+                <div class="footer-social">
+                    {{ with .Site.Params.social }}
+                    {{ with .facebook }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="Facebook"><svg width="20" height="20"><use href="#icon-facebook"></use></svg></a>{{ end }}
+                    {{ with .twitter }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="Twitter"><svg width="20" height="20"><use href="#icon-twitter"></use></svg></a>{{ end }}
+                    {{ with .youtube }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="YouTube"><svg width="20" height="20"><use href="#icon-youtube"></use></svg></a>{{ end }}
+                    {{ with .instagram }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="Instagram"><svg width="20" height="20"><use href="#icon-instagram"></use></svg></a>{{ end }}
+                    {{ with .linkedin }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="20" height="20"><use href="#icon-linkedin"></use></svg></a>{{ end }}
+                    {{ with .telegram }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="Telegram"><svg width="20" height="20"><use href="#icon-telegram"></use></svg></a>{{ end }}
+                    {{ with .whatsapp }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="20" height="20"><use href="#icon-whatsapp"></use></svg></a>{{ end }}
+                    {{ with .tiktok }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="TikTok"><svg width="20" height="20"><use href="#icon-tiktok"></use></svg></a>{{ end }}
+                    {{ end }}
+                </div>
+            </div>
+
+            <!-- Useful Links -->
+            {{ with index .Site.Menus "footer_useful" }}
+            <div class="footer-column">
+                <h2>{{ i18n "useful_links" }}</h2>
+                <ul class="footer-links">
+                    {{ range . }}
+                    <li>
+                        <a href="{{ .URL }}"{{ if .Params.external }} target="_blank" rel="noopener"{{ end }}>{{ .Name }}</a>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+            {{ end }}
+
+            <!-- Related Services -->
+            {{ with index .Site.Menus "footer_services" }}
+            <div class="footer-column">
+                <h2>{{ i18n "related_services" }}</h2>
+                <ul class="footer-links">
+                    {{ range . }}
+                    <li>
+                        <a href="{{ .URL }}"{{ if .Params.external }} target="_blank" rel="noopener"{{ end }}>{{ .Name }}</a>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+            {{ end }}
+
+            <!-- Contact Info -->
+            <div class="footer-column">
+                <h2>{{ i18n "contact_info" }}</h2>
+                <div class="footer-contact">
+                    {{ with .Site.Params.contact }}
+                    {{ $addr := .address }}
+                    {{ if not $addr }}
+                        {{ if eq $.Language.Lang "ar" }}{{ $addr = .address_ar }}{{ else }}{{ $addr = .address_en }}{{ end }}
+                    {{ end }}
+                    {{ with $addr }}
+                    <div class="footer-contact-item">
+                        <svg width="18" height="18"><use href="#icon-location"></use></svg>
+                        <span>{{ . }}</span>
+                    </div>
+                    {{ end }}
+                    {{ with .phone }}
+                    <div class="footer-contact-item">
+                        <svg width="18" height="18"><use href="#icon-phone"></use></svg>
+                        <span style="direction: ltr;">{{ . }}</span>
+                    </div>
+                    {{ end }}
+                    {{ with .email }}
+                    <div class="footer-contact-item">
+                        <svg width="18" height="18"><use href="#icon-email"></use></svg>
+                        <span>{{ . }}</span>
+                    </div>
+                    {{ end }}
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© {{ now.Year }} {{ .Site.Title }}. {{ i18n "all_rights_reserved" }}.</p>
+            {{ with index .Site.Menus "footer_bottom" }}
+            <div class="footer-bottom-links">
+                {{ range . }}
+                <a href="{{ .URL }}"{{ if .Params.external }} target="_blank" rel="noopener"{{ end }}>{{ .Name }}</a>
+                {{ end }}
+            </div>
+            {{ end }}
+            {{ if .Site.Params.showOfficialDomainNotice }}
+            <p class="footer-domain-notice">
+                {{ with .Site.Params.officialDomain }}{{ i18n "official_domain" }}: <strong>{{ . }}</strong>{{ end }}
+                {{ if and .Site.Params.officialDomain .Site.Params.contact.email }} | {{ end }}
+                {{ with .Site.Params.contact.email }}{{ i18n "official_email" }}: <strong>{{ . }}</strong>{{ end }}
+            </p>
+            {{ end }}
+        </div>
+    </div>
+</footer>

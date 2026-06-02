@@ -1,0 +1,14 @@
+# Hugo
+public/
+resources/
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+.claude/
+.planning/

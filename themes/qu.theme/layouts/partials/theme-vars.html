@@ -1,0 +1,11 @@
+<style>
+:root {
+  {{- with site.Params.theme.primaryColor }}--color-primary: {{ . }};{{ end }}
+  {{- with site.Params.theme.primaryColorLight }}--color-primary-light: {{ . }};{{ end }}
+  {{- with site.Params.theme.primaryColorDark }}--color-primary-dark: {{ . }};{{ end }}
+  {{- with site.Params.theme.accentColor }}--color-accent: {{ . }};{{ end }}
+  {{- if and site.Params.theme.primaryColor site.Params.theme.primaryColorLight }}
+  --color-primary-gradient: linear-gradient(135deg, {{ site.Params.theme.primaryColor }} 0%, {{ site.Params.theme.primaryColorLight }} 50%, {{ site.Params.theme.primaryColor }} 100%);
+  {{- end }}
+}
+</style>
