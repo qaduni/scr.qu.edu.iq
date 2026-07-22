@@ -8,9 +8,9 @@ search_announcements_placeholder: "Search announcements..."
 # =============================================================================
 # Hero
 # =============================================================================
-welcome_message: "QA & University Performance Department"
-site_description: "We work to embed a culture of quality at Al-Qadisiyah University, apply local, regional and international standards across teaching and research, and manage institutional and programmatic accreditation as well as performance evaluation."
-internationally_accredited: "Quality Assurance & Accreditation"
+welcome_message: "Scholarship & Cultural Relations Department"
+site_description: "We work to foster international academic cooperation at Al-Qadisiyah University, manage study-abroad scholarships and fellowships, facilitate international student and faculty exchanges, and build partnerships with global educational and research institutions."
+internationally_accredited: "Scholarships & Cultural Relations"
 
 # =============================================================================
 # Homepage Sections
@@ -31,22 +31,13 @@ no_announcements: "No announcements"
 stay_tuned_announcements: "Stay tuned for upcoming announcements"
 all_announcements: "All Announcements"
 
-# Podcast
-podcast: "Podcast"
-podcast_subtitle: "Conversations on quality, accreditation and university performance"
-podcast_episode: "Episode"
-podcast_watch: "Watch on YouTube"
-podcast_no_episodes: "No episodes yet. Stay tuned."
-all_episodes: "All Episodes"
-share: "Share"
-
 # Services section
 services_title: "Departmental Services"
-services_subtitle: "Services the Quality Assurance Department provides to the university's colleges and centres"
+services_subtitle: "Services the Scholarship & Cultural Relations Department provides to the university's colleges and centres"
 view_details: "Details"
 
 # Contact
-have_question: "A question about quality or accreditation?"
+have_question: "A question about scholarships or cultural relations?"
 contact_subtitle: "The department team is ready to answer your questions and provide the support you need"
 contact_us: "Contact"
 today_visitors: "Today's Visitors"
