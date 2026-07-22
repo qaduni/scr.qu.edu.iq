@@ -1,6 +1,7 @@
 # Hugo
 public/
 resources/
+.hugo_build.lock
 
 # Node
 node_modules/
@@ -12,3 +13,4 @@ npm-debug.log*
 .vscode/
 .claude/
 .planning/
+.unlighthouse/
