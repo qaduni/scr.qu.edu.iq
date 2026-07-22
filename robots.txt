@@ -1,0 +1,16 @@
+# https://scr.qu.edu.iq
+
+User-agent: *
+Allow: /
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /private/
+
+# Sitemap
+Sitemap: https://scr.qu.edu.iq/sitemap.xml
+Sitemap: https://scr.qu.edu.iq/ar/sitemap.xml
+Sitemap: https://scr.qu.edu.iq/en/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
