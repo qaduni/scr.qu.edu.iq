@@ -124,37 +124,54 @@
 # -----------------------------------------------------------------------------
 # Homepage — Quick Links
 # -----------------------------------------------------------------------------
-[[quick_links]]
-  name   = ""
-  weight = 10
-  url    = ""
-  [quick_links.params]
-    icon = ""
+#[[quick_links]]
+#  name   = ""
+#  weight = 10
+#  url    = ""
+#  [quick_links.params]
+#    icon = ""
 # -----------------------------------------------------------------------------
 # Homepage — Services cards
 # -----------------------------------------------------------------------------
 [[homepage_services]]
-  name   = ""
+  name   = "Division of Overseas Students and Delegations"
   weight = 10
   url    = ""
   [homepage_services.params]
     image = ""
     description = ""
+
 [[homepage_services]]
-  name   = ""
+  name   = "Division of Cultural Relations"
   weight = 20
   url    = ""
   [homepage_services.params]
     image = ""
     description = ""
+
 [[homepage_services]]
-  name   = ""
+  name   = "Erasmus+ European Union Projects Unit"
   weight = 30
   url    = ""
   [homepage_services.params]
     image = ""
     description = ""
 
+[[homepage_services]]
+  name   = "Study in Iraq Unit"
+  weight = 40
+  url    = ""
+  [homepage_services.params]
+    image = ""
+    description = ""
+
+[[homepage_services]]
+  name   = "Plagiarism Check Services"
+  weight = 50
+  url    = ""
+  [homepage_services.params]
+    image = ""
+    description = ""
 # -----------------------------------------------------------------------------
 # Hero CTAs
 # -----------------------------------------------------------------------------

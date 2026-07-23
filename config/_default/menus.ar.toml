@@ -124,37 +124,50 @@
 # -----------------------------------------------------------------------------
 # Homepage — Quick Links section
 # -----------------------------------------------------------------------------
-[[quick_links]]
-  name   = ""
-  weight = 10
-  url    = ""
-  [quick_links.params]
-    icon = ""
+#[[quick_links]]
+#  name   = ""
+#  weight = 10
+#  url    = ""
+#  [quick_links.params]
+#    icon = ""
 # -----------------------------------------------------------------------------
-# Homepage — Services cards section (4 large feature cards)
+# Homepage — Services cards section
 # -----------------------------------------------------------------------------
 [[homepage_services]]
-  name   = ""
+  name   = "شعبة الدارسين في الخارج والإيفادات"
   weight = 10
   url    = ""
   [homepage_services.params]
     image = ""
     description = ""
 [[homepage_services]]
-  name   = ""
+  name   = "شعبة العلاقات الثقافية"
   weight = 20
   url    = ""
   [homepage_services.params]
     image = ""
     description = ""
 [[homepage_services]]
-  name   = ""
+  name   = "وحدة مشاريع الاتحاد الأوروبي (إيراسموس)"
   weight = 30
   url    = ""
   [homepage_services.params]
     image = ""
     description = ""
-
+[[homepage_services]]
+  name   = "وحدة ادرس في العراق"
+  weight = 40
+  url    = ""
+  [homepage_services.params]
+    image = ""
+    description = ""
+[[homepage_services]]
+  name   = "خدمات الاستلال الإلكتروني"
+  weight = 50
+  url    = ""
+  [homepage_services.params]
+    image = ""
+    description = ""
 # -----------------------------------------------------------------------------
 # Hero CTAs (2 buttons)
 # -----------------------------------------------------------------------------
