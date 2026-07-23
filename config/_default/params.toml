@@ -1,5 +1,5 @@
 # =============================================================================
-# Site Params — qa.qu.edu.iq (Quality Assurance Department, Al-Qadisiyah Uni)
+# Site Params — scr.qu.edu.iq (Scholarship & Cultural Relations Department, Al-Qadisiyah Uni)
 #
 # These are the SITE-LEVEL overrides. The qu.theme ships neutral defaults
 # for everything below; only override what is specific to this organisation.
@@ -13,7 +13,7 @@ campusMapEmbed = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6502.660
 
 # Optional "Official Domain / Official Email" notice in the footer.
 # Common pattern for Iraqi government / university sites.
-officialDomain = "qa.qu.edu.iq"
+officialDomain = "scr.qu.edu.iq"
 showOfficialDomainNotice = true
 
 # Endpoints (empty string = feature is hidden / mailto fallback used)
@@ -25,7 +25,7 @@ visitorCounterEndpoint = ""
 # `address` is a single human-readable string. Per-language overrides
 # in hugo.toml localise it to Arabic / English.
 [contact]
-  email   = "qu.assurance@qu.edu.iq"
+  email   = "scr@qu.edu.iq"
   phone   = ""
   address = "Al-Qadisiyah University, Al-Diwaniyah, Al-Qadisiyah Province, Iraq"
 
@@ -62,7 +62,6 @@ visitorCounterEndpoint = ""
   news          = "/media/news"
   announcements = "/media/announcements"
   contact       = "/media/contact"
-  podcast       = "/media/podcast"
 
-heroImages = ["images/hero.webp", "images/hero-2.webp", "images/hero-3.webp", "images/hero-4.webp"]
+# heroImages = ["images/hero.webp", "images/hero-2.webp"]
 

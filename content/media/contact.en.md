@@ -1,12 +1,12 @@
 ---
 title: "Contact Us"
-description: "Contact information for the Quality Assurance and University Performance Department"
+description: "Contact information for the Scholarship & Cultural Relations Department"
 ---
 
 ## Contact Information
 
 ### Address
-Quality Assurance and University Performance Department  
+Scholarship & Cultural Relations Department  
 Al-Qadisiyah University — Presidency  
 Al-Diwaniyah, Al-Qadisiyah Province, Iraq
 

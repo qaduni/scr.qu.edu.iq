@@ -1,11 +1,11 @@
-# qa.qu.edu.iq — Quality Assurance & University Performance Department
+# scr.qu.edu.iq — Scholarship & Cultural Relations & University Performance Department
 
 [![Hugo](https://img.shields.io/badge/Hugo-Extended-blue?logo=hugo)](https://gohugo.io/)
-[![License](https://img.shields.io/github/license/qaduni/qa.qu.edu.iq)](LICENSE)
-[![Last Commit](https://img.shields.io/github/last-commit/qaduni/qa.qu.edu.iq)](https://github.com/qaduni/qa.qu.edu.iq/commits/main)
-[![Deploy](https://github.com/qaduni/qa.qu.edu.iq/actions/workflows/deploy.yml/badge.svg)](https://github.com/qaduni/qa.qu.edu.iq/actions/workflows/deploy.yml)
+[![License](https://img.shields.io/github/license/qaduni/scr.qu.edu.iq)](LICENSE)
+[![Last Commit](https://img.shields.io/github/last-commit/qaduni/scr.qu.edu.iq)](https://github.com/qaduni/scr.qu.edu.iq/commits/main)
+[![Deploy](https://github.com/qaduni/scr.qu.edu.iq/actions/workflows/deploy.yml/badge.svg)](https://github.com/qaduni/scr.qu.edu.iq/actions/workflows/deploy.yml)
 
-Bilingual (Arabic + English) Hugo website for the Quality Assurance and University Performance Department at Al-Qadisiyah University.
+Bilingual (Arabic + English) Hugo website for the Scholarship & Cultural Relations Department at Al-Qadisiyah University.
 
 
 Content is managed through **Sveltia CMS** (Git-backed CMS that commits directly to this repository), and site search is powered by **Pagefind**.
@@ -84,8 +84,8 @@ sudo apt install hugo
 Because the theme is a Git submodule, clone the repository with submodules enabled:
 
 ```bash
-git clone --recurse-submodules https://github.com/qaduni/qa.qu.edu.iq.git
-cd qa.qu.edu.iq
+git clone --recurse-submodules https://github.com/qaduni/scr.qu.edu.iq.git
+cd scr.qu.edu.iq
 
 npm ci
 hugo server

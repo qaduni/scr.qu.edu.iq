@@ -1,4 +1,4 @@
 ---
 title: "About"
-description: "About the Quality Assurance Department — vision, mission, and organisational structure."
+description: "About the Scholarship & Cultural Relations Department — vision, mission, and organisational structure."
 ---

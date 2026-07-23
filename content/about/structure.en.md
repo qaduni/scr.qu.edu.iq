@@ -1,27 +1,31 @@
 ---
 title: "Department Structure"
-description: "Organizational structure of the Quality Assurance and University Performance Department at Al-Qadisiyah University"
+description: "Organizational structure of the Department of Scholarships and Cultural Relations at the University of Al-Qadisiyah"
 ---
 
 ## About the Department
 
-The Quality Assurance and University Performance Department at Al-Qadisiyah University was established in December 2017 as the unit responsible for applying the quality and accreditation system — institutional, programmatic and laboratory — across all colleges, centers and administrative units of the university.
+The Department of Scholarships and Cultural Relations is one of the vital departments at the University of Al-Qadisiyah, operating under the supervision of the Vice President for Scientific Affairs. The department manages and organizes scholarship affairs, develops academic and cultural ties with international universities, and aims to qualify university staff to earn advanced degrees from prestigious global institutions.
 
-The department coordinates with the university presidency, all scientific and administrative departments, and relevant external bodies (the Supervision and Scientific Evaluation Authority, the Quality Assurance and Academic Accreditation Directorate at the Ministry of Higher Education, and international accreditation bodies).
+## Subordinated Divisions and Units
 
-## Divisions
+The Department of Scholarships and Cultural Relations consists of the following divisions and units:
 
-The department comprises three principal divisions working in an integrated manner:
+### 1. Division of Overseas Students and Delegations
+Responsible for tracking the affairs of sponsored students from nomination through graduation, coordinating admission and registration in foreign universities, managing financial dues and periodic student reports, and issuing official university orders for overseas official tasks/delegations.
 
-### 1. Performance Evaluation Division
-Responsible for preparing annual institutional performance-evaluation forms, monitoring their application across colleges and centers, analyzing the results and issuing reports.
+### 2. Division of Cultural Relations
+Handles the execution of memorandums of understanding (MoUs) and agreements with international academic institutions, organizes scientific and cultural conferences/seminars, and coordinates visits of academic delegations and skill exchanges.
 
-### 2. Assurance Division
-Responsible for following up the implementation of quality-assurance standards, preparing improvement plans, and embedding a culture of quality among the academic and administrative staff.
+### 3. Erasmus+ European Union Projects Unit
+Organizes workshops and training courses in education, youth, and sports while offering academic and administrative support to program participants.
 
-### 3. Accreditation Division
-Manages institutional, programmatic and laboratory accreditation files, liaises with local and international accreditation bodies, and tracks ISO certifications.
+### 4. "Study in Iraq" Unit
+Promotes the academic programs and fields available at the University of Al-Qadisiyah to international students, organizes promotional introductory events, and provides guidance to prospective international applicants.
+
+### 5. Plagiarism Check Services
+Monitors and documents academic plagiarism checks for research and university theses, delivers periodic reports on similarity percentages, and coordinates with academic departments to maintain scientific research quality.
 
 ## Administrative Reporting
 
-The department reports directly to the President of Al-Qadisiyah University.
+The department reports directly to the Vice President for Scientific Affairs at the University of Al-Qadisiyah.

@@ -1,47 +1,37 @@
 ---
-title: "Vision & Mission"
-description: "Vision, mission and objectives of the Quality Assurance and University Performance Department"
+title: "Vision and Mission"
+description: "The vision, mission, objectives, and values of the Department of Scholarships and Cultural Relations at the University of Al-Qadisiyah"
 ---
 
 ## Vision
 
-To establish a quality culture as deeply rooted expertise among the scientific and administrative staff of Al-Qadisiyah University, and to apply local, regional and international standards in education and scientific research in alignment with sustainable development goals.
+To serve as a leading bridge elevating the University of Al-Qadisiyah towards global recognition by strengthening international academic partnerships, empowering scientific and research personnel, and attracting international students to enhance the university’s academic standing worldwide.
 
 ## Mission
 
-To apply quality-assurance standards in order to provide a sustainable educational environment, and to pursue continuous improvement through institutional and programmatic accreditation while tracking every relevant development in the field of quality and accreditation at the local and international levels.
+Building and enhancing an integrated network of cultural and academic relations with prestigious global universities and institutions, facilitating scholarship and official delegation procedures, and providing opportunities for academic and research exchanges to deliver distinguished scientific outcomes that serve society and sustainable development.
 
 ## Objectives
 
-### 1. Quality Assurance
-- Build an integrated quality-assurance system covering academic, administrative and research activities
-- Monitor the application of quality policies across all colleges and centers of the university
-- Disseminate a quality culture among university personnel
+### 1. Scholarships and Faculty Development
+- Qualifying and preparing academic and administrative personnel by sending them to earn postgraduate degrees from reputable international universities.
+- Tracking sponsored students and streamlining all academic, financial, and administrative procedures to ensure their academic excellence and successful completion of studies.
+- Organizing scientific delegations and official overseas assignments to advance research and academic collaboration.
 
-### 2. Institutional and Programmatic Accreditation
-- Prepare institutional accreditation files in line with Ministry of Higher Education requirements
-- Support academic programs in obtaining programmatic accreditation
-- Coordinate with international accreditation bodies (ABET, AACSB, ASIIN and others)
+### 2. International Relations and Collaboration
+- Executing and activating memorandums of understanding (MoUs) and academic agreements with global institutions and universities.
+- Organizing joint scientific and cultural conferences, seminars, and workshops in collaboration with international organizations.
+- Hosting academic delegations and international experts to facilitate knowledge sharing and exchange of expertise.
 
-### 3. Performance Evaluation
-- Implement the annual institutional performance-evaluation forms
-- Issue periodic reports on the performance of colleges and centers
-- Propose improvement plans based on evaluation results
-
-### 4. International Rankings
-- Track Al-Qadisiyah University's position in global rankings (Times, QS, Webometrics, Scimago)
-- Collect and submit the required data to ranking bodies
-- Improve the performance indicators that feed into the rankings
-
-### 5. Laboratory Accreditation
-- Pursue laboratory accreditation in line with international standards (ISO/IEC 17025)
-- Inventory laboratories and document their capabilities
-- Promote laboratory safety standards
+### 3. International Programs and Projects
+- Managing and expanding comprehensive academic exchange projects, such as European Union programs (Erasmus+).
+- Promoting the academic programs of the University of Al-Qadisiyah under the "Study in Iraq" initiative to attract prospective international students.
+- Supporting researchers by offering certified translation and plagiarism check services to encourage high-quality international publishing.
 
 ## Values
 
-- **Transparency**: working through documented, published procedures
-- **Objectivity**: evaluating performance against measurable, evidence-based criteria
-- **Continuous Improvement**: persistent pursuit of better performance
-- **Collaboration**: working as a team with every unit of the university
-- **Standards-Based**: adopting recognized local and international standards
+- **Global Outlook & Openness**: Building cross-border collaboration across diverse cultures and academic institutions.
+- **Professionalism & Transparency**: Delivering administrative and academic services under high standards of fairness and precision.
+- **Integration & Teamwork**: Continuously coordinating with university entities to achieve shared scientific aspirations.
+- **Academic Integrity**: Encouraging scholarships and partnerships exclusively with highly reputable educational institutions.
+- **Continuous Improvement**: Striving relentlessly to enhance the linguistic, research, and academic skills of university staff.

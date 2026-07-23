@@ -27,7 +27,7 @@ theme = "qu.theme"
 
     [languages.ar.params]
       description = "قسم البعثات والعلاقات الثقافية في جامعة القادسية"
-      shortTitle  = "قسم ضمان الجودة"
+      shortTitle  = "البعثات والعلاقات الثقافية"
       parentName  = "جامعة القادسية"
       parentURL   = "https://qu.edu.iq"
 
@@ -43,7 +43,7 @@ theme = "qu.theme"
 
     [languages.en.params]
       description = "Scholarship & Culture Relationship Department at Al-Qadisiyah University"
-      shortTitle  = "Quality Assurance Department"
+      shortTitle  = "cholarship & Culture Relationship"
       parentName  = "Al-Qadisiyah University"
       parentURL   = "https://qu.edu.iq"
 

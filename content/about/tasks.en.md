@@ -1,53 +1,69 @@
 ---
-title: "Department Tasks"
-description: "The principal tasks and responsibilities of the Quality Assurance and University Performance Department"
+title: "Department Duties"
+description: "The main duties and job responsibilities of the Department of Scholarships and Cultural Relations at the University of Al-Qadisiyah"
 ---
 
-## Principal Tasks
+## Job Descriptions
 
-### Strategy and Planning
-- Preparing and periodically updating the university's strategic plan for quality assurance
-- Preparing annual improvement plans for colleges and centers
-- Proposing policies and procedures required to operate the quality system
+### Department Director
+- Directing the department and directly supervising the execution of all its duties.
+- Developing and updating strategic plans to elevate the department's performance.
+- Coordinating workflow and duties across the department's various divisions and units.
+- Representing the department in local and international academic meetings, conferences, and events.
 
-### Institutional and Programmatic Accreditation
-- Following up institutional accreditation procedures in line with the Ministry of Higher Education's standards
-- Supporting colleges and departments in obtaining programmatic accreditation
-- Liaising with international accreditation bodies and submitting required files
-- Tracking ISO certifications across the university
+### Heads of Divisions and Units
+- Managing specific divisions or units within the department and delegating tasks to staff.
+- Overseeing and executing daily administrative and academic responsibilities relevant to the division.
+- Submitting periodic reports on division activities and achievements to the Department Director.
+- Coordinating with other university departments and divisions to achieve shared goals.
 
-### Performance Evaluation
-- Preparing annual institutional performance-evaluation forms
-- Distributing forms to colleges and centers and monitoring their application
-- Collecting and analyzing data and issuing reports
-- Publishing results and submitting recommendations to relevant authorities
+### Administrative Staff
+- Supporting daily administrative and logistical operations within the department.
+- Drafting official documents, communications, and correspondence.
+- Organizing and archiving files and records related to sponsored students and academic programs.
+- Providing technical and administrative support to division and unit heads.
 
-### Rankings
-- Tracking the university's position in international and Arab rankings
-- Collecting and formatting data per the requirements of each ranking
-- Liaising with ranking bodies (Times Higher Education, QS, Webometrics, Scimago, IRU)
-- Producing annual reports on ranking outcomes
+---
 
-### Laboratory Accreditation
-- Inventorying laboratories across all colleges
-- Documenting laboratory equipment and capabilities
-- Pursuing laboratory accreditation in line with ISO/IEC 17025
-- Disseminating laboratory safety standards and monitoring compliance
+## Key Tasks and Responsibilities
 
-### Promoting a Quality Culture
-- Organizing training workshops on quality assurance and accreditation
-- Preparing and circulating guidance manuals and standards
-- Participating in conferences and seminars on quality
-- Issuing awareness publications and bulletins
+### Duties of the Department Director
+- Formulating and implementing strategic and development plans for the department.
+- Managing and effectively allocating the department’s budget and human resources.
+- Tracking the execution of memorandums of understanding (MoUs) and international agreements with global universities.
+- Providing guidance, support, and direction to department personnel.
+- Coordinating academic and cultural activities and events across the university.
+- Preparing comprehensive performance reports for senior university leadership (Vice President for Scientific Affairs).
 
-### Surveys and Feedback
-- Designing and implementing student-feedback surveys on teaching staff
-- Designing student-satisfaction surveys on university services
-- Designing employer-satisfaction surveys on graduates
-- Analyzing results and submitting recommendations
+### Duties of Divisions and Units
 
-### External Coordination
-- Coordinating with the Quality Assurance and Academic Accreditation Directorate at the Ministry
-- Coordinating with the Supervision and Scientific Evaluation Authority
-- Coordinating with international bodies concerned with quality and accreditation
-- Maintaining memberships and subscriptions
+#### 1. Division of Overseas Students and Delegations
+- Tracking sponsored students' affairs from admission, study, and extensions to graduation and financial settlements.
+- Coordinating continuously with foreign universities to ensure smooth academic progress.
+- Providing necessary administrative and academic guidance and support to overseas students.
+- Issuing official university orders for scientific delegations and official tasks outside Iraq.
+
+#### 2. Division of Cultural Relations
+- Drafting and reviewing agreements and memorandums of understanding (MoUs) with international academic institutions.
+- Organizing and coordinating joint scientific and cultural conferences, seminars, and events.
+- Coordinating visits for international academic delegations and facilitating knowledge exchanges.
+
+#### 3. English Language Unit
+- Providing certified translation services for documents and official correspondence to and from English.
+- Reviewing and proofreading scientific abstracts and papers in English for faculty and researchers.
+- Organizing specialized workshops and training courses to enhance English proficiency for teaching and administrative staff.
+
+#### 4. Erasmus+ European Union Projects Unit
+- Managing and implementing academic and cultural exchange programs for students and faculty with European universities.
+- Organizing workshops and training programs in education, training, youth, and sports.
+- Offering academic and administrative guidance to applicants and participants in EU projects.
+
+#### 5. "Study in Iraq" Unit
+- Marketing and promoting available academic programs and specializations at the University of Al-Qadisiyah to international applicants.
+- Hosting introductory and promotional events to attract international students to the university.
+- Providing guidance and administrative support to prospective international students studying at the University of Al-Qadisiyah.
+
+#### 6. Plagiarism Check Services Unit
+- Tracking and documenting scientific plagiarism checks for research papers, master’s theses, and doctoral dissertations.
+- Issuing and evaluating similarity reports to maintain academic integrity and research standards.
+- Coordinating with academic departments and colleges to ensure high-quality scientific output.

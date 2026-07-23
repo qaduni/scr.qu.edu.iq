@@ -1,4 +1,4 @@
 ---
 title: "Home"
-description: "Quality Assurance and University Performance Department - Al-Qadisiyah University"
+description: "Scholarship & Cultural Relations Department - Al-Qadisiyah University"
 ---
