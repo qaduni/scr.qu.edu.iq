@@ -29,8 +29,8 @@ media_libraries:
       svg:
         optimize: true
 
-site_url: https://qa.qu.edu.iq
-display_url: https://qa.qu.edu.iq
+site_url: https://scr.qu.edu.iq
+display_url: https://scr.qu.edu.iq
 
 collections:
   - name: "news"
