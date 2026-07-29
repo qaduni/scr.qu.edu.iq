@@ -1,0 +1,69 @@
+hero:
+  badge: "Scholarship and Cultural Relations"
+  title: "Scholarship & Cultural Relations Department"
+  description: "We work to foster international academic cooperation at Al-Qadisiyah University, manage study-abroad scholarships and fellowships, facilitate international student and faculty exchanges, and build partnerships with global educational and research institutions."
+  buttons:
+    primary_name: "About the Department"
+    primary_url: "/en/about/structure/"
+    secondary_name: "Our Vision & Mission"
+    secondary_url: "/en/about/vision-mission/"
+
+services:
+  title: ""
+  sub_title: ""
+  items:
+    - name: "Division of Overseas Students and Delegations"
+      weight: 10
+      url: ""
+      params:
+        image: ""
+        description: ""
+
+    - name: "Division of Cultural Relations"
+      weight: 20
+      url: ""
+      params:
+        image: ""
+        description: ""
+
+    - name: "Erasmus+ European Union Projects Unit"
+      weight: 30
+      url: ""
+      params:
+        image: ""
+        description: ""
+
+    - name: "Study in Iraq Unit"
+      weight: 40
+      url: ""
+      params:
+        image: ""
+        description: ""
+
+    - name: "Plagiarism Check Services"
+      weight: 50
+      url: ""
+      params:
+        image: ""
+        description: ""
+
+# quick_links:
+#   title: "روابط سريعة"
+#   sub_title: "الوصول السريع إلى الخدمات والمنصات الأكثر استخداماً"
+#   items:
+#     - name: "البوابة الإلكترونية"
+#       url: "https://example.com"
+#       params:
+#         icon: "link"
+#         external: true
+
+#     - name: "المكتبة الرقمية"
+#       url: "/library"
+#       params:
+#         icon: "book"
+#         external: false
+
+#     - name: "الجدول الدراسي"
+#       url: "/schedule"
+#       params:
+#         icon: "calendar"

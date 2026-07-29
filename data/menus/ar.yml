@@ -1,0 +1,55 @@
+main:
+  - name: "الرئيسية"
+    weight: 10
+    url: "/ar/"
+
+  - name: "عن القسم"
+    identifier: "about"
+    weight: 20
+
+  - name: "هيكلية القسم"
+    parent: "about"
+    weight: 21
+    url: "/ar/about/structure/"
+
+  - name: "رؤية القسم"
+    parent: "about"
+    weight: 22
+    url: "/ar/about/vision-mission/"
+
+  - name: "مهام القسم"
+    parent: "about"
+    weight: 23
+    url: "/ar/about/tasks/"
+
+  - name: "الإعلام والتواصل"
+    identifier: "news_announcements"
+    weight: 80
+
+  - name: "الأخبار"
+    parent: "news_announcements"
+    weight: 81
+    url: "/ar/media/news/"
+
+  - name: "الإعلانات"
+    parent: "news_announcements"
+    weight: 82
+    url: "/ar/media/announcements/"
+
+  - name: "تواصلوا معنا"
+    parent: "news_announcements"
+    weight: 84
+    url: "/ar/media/contact/"
+
+top_bar:
+  - name: "العودة إلى موقع الجامعة"
+    weight: 10
+    url: "https://qu.edu.iq"
+    params:
+      external: true
+
+  - name: "موقع الاستدامة"
+    weight: 20
+    url: "https://sust.qu.edu.iq"
+    params:
+      external: true

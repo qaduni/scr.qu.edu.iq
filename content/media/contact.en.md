@@ -11,7 +11,7 @@ Al-Qadisiyah University — Presidency
 Al-Diwaniyah, Al-Qadisiyah Province, Iraq
 
 ### Email
-- **Departmental email**: qu.assurance@qu.edu.iq
+- **Departmental email**: scr@qu.edu.iq
 
 ### Working Hours
 - **Sunday - Thursday**: 8:00 AM - 2:00 PM
@@ -22,9 +22,6 @@ Al-Diwaniyah, Al-Qadisiyah Province, Iraq
 ## Contact Form
 
 To contact the department, please fill out the form below and we will respond as soon as possible.
-
-{{< contact-form >}}
-
 ---
 
 ## Location

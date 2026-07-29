@@ -1,0 +1,69 @@
+hero:
+  badge: "البعثات والعلاقات الثقافية"
+  title: "قسم البعثات والعلاقات الثقافية"
+  description: "نسعى إلى تعزيز التعاون الأكاديمي الدولي في جامعة القادسية، وإدارة البعثات والزمالات الدراسية، وتسهيل التبادل العلمي والطلابي، وبناء الشراكات مع المؤسسات التعليمية والبحثية العالمية."
+  buttons:
+    primary_name: "تعرف على القسم"
+    primary_url: "ar/about/structure/"
+    secondary_name: "رؤيتنا ورسالتنا"
+    secondary_url: "ar/about/vision-mission/"
+
+services:
+  title: "شعب القسم"
+  sub_title: "تعرف على الشعب و وحدات القسم"
+  items:
+    - name: "شعبة الدارسين في الخارج والإيفادات"
+      weight: 10
+      url: ""
+      params:
+        image: ""
+        description: ""
+
+    - name: "شعبة العلاقات الثقافية"
+      weight: 20
+      url: ""
+      params:
+        image: ""
+        description: ""
+
+    - name: "وحدة مشاريع الاتحاد الأوروبي (إيراسموس)"
+      weight: 30
+      url: ""
+      params:
+        image: ""
+        description: ""
+
+    - name: "وحدة ادرس في العراق"
+      weight: 40
+      url: ""
+      params:
+        image: ""
+        description: ""
+
+    - name: "خدمات الاستلال الإلكتروني"
+      weight: 50
+      url: ""
+      params:
+        image: ""
+        description: ""
+
+# quick_links:
+#   title: "روابط سريعة"
+#   sub_title: "الوصول السريع إلى الخدمات والمنصات الأكثر استخداماً"
+#   items:
+#     - name: "البوابة الإلكترونية"
+#       url: "https://example.com"
+#       params:
+#         icon: "link"
+#         external: true
+
+#     - name: "المكتبة الرقمية"
+#       url: "/library"
+#       params:
+#         icon: "book"
+#         external: false
+
+#     - name: "الجدول الدراسي"
+#       url: "/schedule"
+#       params:
+#         icon: "calendar"

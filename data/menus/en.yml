@@ -1,0 +1,55 @@
+main:
+  - name: "Home"
+    weight: 10
+    url: "/en/"
+
+  - name: "About"
+    identifier: "about"
+    weight: 20
+
+  - name: "Department Structure"
+    parent: "about"
+    weight: 21
+    url: "/en/about/structure/"
+
+  - name: "Vision"
+    parent: "about"
+    weight: 22
+    url: "/en/about/vision-mission/"
+
+  - name: "Tasks"
+    parent: "about"
+    weight: 23
+    url: "/en/about/tasks/"
+
+  - name: "Media and Communication"
+    identifier: "news_announcements"
+    weight: 80
+
+  - name: "News"
+    parent: "news_announcements"
+    weight: 81
+    url: "/en/media/news/"
+
+  - name: "Announcements"
+    parent: "news_announcements"
+    weight: 82
+    url: "/en/media/announcements/"
+
+  - name: "Contact"
+    parent: "news_announcements"
+    weight: 84
+    url: "/en/media/contact/"
+
+top_bar:
+  - name: "Back to the university site"
+    weight: 10
+    url: "https://qu.edu.iq"
+    params:
+      external: true
+
+  - name: "Sustainability"
+    weight: 20
+    url: "https://sust.qu.edu.iq"
+    params:
+      external: true

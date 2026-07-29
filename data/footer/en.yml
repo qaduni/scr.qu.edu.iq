@@ -1,0 +1,42 @@
+footer_useful:
+  - name: "Department Structure"
+    weight: 10
+    url: "/en/about/structure/"
+
+  - name: "Vision"
+    weight: 20
+    url: "/en/about/vision-mission/"
+
+  - name: "Tasks"
+    weight: 30
+    url: "/en/about/tasks/"
+
+footer_services:
+  - name: "Sustainability"
+    weight: 50
+    url: "https://sust.qu.edu.iq"
+    params:
+      external: true
+
+  - name: "Back to the university site"
+    weight: 60
+    url: "https://qu.edu.iq"
+    params:
+      external: true
+
+footer_bottom:
+  - name: "Sitemap"
+    weight: 10
+    url: "/sitemap.xml"
+
+  - name: "Accessibility"
+    weight: 20
+    url: "/en/policies/accessibility/"
+
+  - name: "Privacy Policy"
+    weight: 30
+    url: "/en/policies/privacy-policy/"
+
+  - name: "Security"
+    weight: 40
+    url: "/en/policies/security-policy/"

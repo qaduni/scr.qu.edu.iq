@@ -1,0 +1,14 @@
+title: "قسم البعثات والعلاقات الثقافية"
+description: "قسم البعثات والعلاقات الثقافية في جامعة القادسية"
+short_title: "البعثات والعلاقات الثقافية"
+parent_name: "جامعة القادسية"
+
+address: "جامعة القادسية، الديوانية، محافظة القادسية، العراق"
+
+schema:
+  type: "EducationalOrganization"
+  alternate_name: "جامعة القادسية"
+  address:
+    locality: "الديوانية"
+    region: "محافظة القادسية"
+    country: "العراق"
