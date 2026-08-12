@@ -149,6 +149,32 @@ collections:
       - { label: "Title", name: "title", widget: "string", i18n: true }
       - { label: "Description", name: "description", widget: "text", required: false, i18n: true }
       - { label: "Body", name: "body", widget: "markdown", i18n: true }
+  - name: "erasmus_and_international_projects"
+    label: "مشاريع إيراسموس+ والمشاريع الدولية"
+    folder: "content/erasmus_and_international_projects"
+    icon: article
+    create: false
+    i18n: true
+    extension: "md"
+    format: "frontmatter"
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string", i18n: true }
+      - { label: "Description", name: "description", widget: "text", required: false, i18n: true }
+      - { label: "Body", name: "body", widget: "markdown", i18n: true }
+  - name: "mous_and_agreements"
+    label: "سجل مذكرات التفاهم والتعاون الأكاديمي"
+    folder: "content/mous_and_agreements"
+    icon: article
+    create: false
+    i18n: true
+    extension: "md"
+    format: "frontmatter"
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string", i18n: true }
+      - { label: "Description", name: "description", widget: "text", required: false, i18n: true }
+      - { label: "Body", name: "body", widget: "markdown", i18n: true }
   - name: "policies"
     label: "السياسات واللوائح"
     folder: "content/policies"
