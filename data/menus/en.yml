@@ -22,6 +22,16 @@ main:
     weight: 23
     url: "/en/about/tasks/"
 
+  - name: "Erasmus+ & international Projects"
+    identifier: "erasmus_and_international_projects"
+    weight: 30
+    url: "/en/erasmus_and_international_projects/"
+  
+  - name: "MoUs & Agreements"
+    identifier: "mous_and_agreements"
+    weight: 40
+    url: "/en/mous_and_agreements/"
+
   - name: "Media and Communication"
     identifier: "news_announcements"
     weight: 80

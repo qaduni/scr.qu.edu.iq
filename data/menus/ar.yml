@@ -22,6 +22,16 @@ main:
     weight: 23
     url: "/ar/about/tasks/"
 
+  - name: "مشاريع إيراسموس+ والمشاريع الدولية"
+    identifier: "erasmus_and_international_projects"
+    weight: 30
+    url: "/ar/erasmus_and_international_projects/"
+
+  - name: "مذكرات التفاهم والتعاون الأكاديمي"
+    identifier: "mous_and_agreements"
+    weight: 40
+    url: "/ar/mous_and_agreements/"
+
   - name: "الإعلام والتواصل"
     identifier: "news_announcements"
     weight: 80
