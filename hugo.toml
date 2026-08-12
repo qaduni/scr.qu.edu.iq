@@ -55,7 +55,7 @@ enableRobotsTXT = true
 
 [outputFormats.WebManifest]
   mediaType = "application/manifest+json"
-  baseName = "index"
+  baseName = "manifest"
   isPlainText = true
   notAlternative = true
 
