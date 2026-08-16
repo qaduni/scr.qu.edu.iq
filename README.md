@@ -14,5 +14,5 @@ Content is managed through **Sveltia CMS** (Git-backed CMS that commits directly
 
 * **Hugo Extended** — Content lives in `content/{ar,en}/`, configuration in `config/_default/`.
 * **Pagefind (≥ 1.5)** — Client-side search with separate search bundles for News and Announcements.
-* **Sveltia CMS** — Available at `/admin/`, configured via `static/admin/config.yml`.
+* **Sveltia CMS** — Available by default in the theme.
 * **qu.theme** — Hugo theme included as a Git submodule in `themes/qu.theme/`.
