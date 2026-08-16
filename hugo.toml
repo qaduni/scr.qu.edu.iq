@@ -6,6 +6,10 @@ title = "قسم البعثات والعلاقات الثقافية - جامعة 
 buildFuture = true
 theme = "qu.theme"
 
+[Params]
+  cms_repo = "qaduni/scr.qu.edu.iq"
+  cms_branch = "main"
+
 enableRobotsTXT = true
 
 [module]
