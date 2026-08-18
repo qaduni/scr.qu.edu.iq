@@ -3,7 +3,6 @@
 [![Hugo](https://img.shields.io/badge/Hugo-Extended-blue?logo=hugo)](https://gohugo.io/)
 [![License](https://img.shields.io/github/license/qaduni/scr.qu.edu.iq)](LICENSE)
 [![Last Commit](https://img.shields.io/github/last-commit/qaduni/scr.qu.edu.iq)](https://github.com/qaduni/scr.qu.edu.iq/commits/main)
-[![Deploy](https://github.com/qaduni/scr.qu.edu.iq/actions/workflows/deploy.yml/badge.svg)](https://github.com/qaduni/scr.qu.edu.iq/actions/workflows/deploy.yml)
 
 Bilingual (Arabic + English) Hugo website for the Scholarship & Cultural Relations Department at Al-Qadisiyah University.
 
