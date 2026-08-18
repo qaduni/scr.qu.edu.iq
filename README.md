@@ -1,4 +1,4 @@
-# scr.qu.edu.iq — Scholarship & Cultural Relations & University Performance Department
+# scr.qu.edu.iq — Scholarship & Cultural Relations Department
 
 [![Hugo](https://img.shields.io/badge/Hugo-Extended-blue?logo=hugo)](https://gohugo.io/)
 [![License](https://img.shields.io/github/license/qaduni/scr.qu.edu.iq)](LICENSE)
