@@ -8,6 +8,11 @@ hero:
     secondary_name: "Our Vision & Mission"
     secondary_url: "/en/about/vision-mission/"
 
+search:
+  title: "Global Search"
+  sub_title: "Search across site pages."
+  placeholder: "Type to search..."
+
 services:
   title: "Department Branches"
   sub_title: "Learn about the Department Branches and Units"
