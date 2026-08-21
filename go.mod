@@ -2,4 +2,4 @@ module github.com/qaduni/scr.qu.edu.iq
 
 go 1.26.5
 
-require github.com/qaduni/qu.theme v0.0.0-20260819094041-810e0ba51c22 // indirect
+require github.com/qaduni/qu.theme v0.0.0-20260821013552-c44c07613d57 // indirect
